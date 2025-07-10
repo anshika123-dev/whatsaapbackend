@@ -16,7 +16,7 @@ const whatsappRoutes = require('./routes/whatsappRoutes');
 
 // SESSION STORE
 const { sessions, tempSessions } = require('./sessionStore');
-
+// MONGO_URI=mongodb+srv://anshikasinghal109:BuiqTIqjzMC5PTdL@cluster0.s9fwigj.mongodb.net/myDatabase?retryWrites=true&w=majority
 const app = express();
 const server = http.createServer(app);
 const io = new Server(server, { cors: { origin: '*' } });
